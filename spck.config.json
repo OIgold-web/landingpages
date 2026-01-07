@@ -1,0 +1,7 @@
+{
+  "run": {
+    "type": "file",
+    "file": "index1.html",
+    "ignoreCurrent": false
+  }
+}
