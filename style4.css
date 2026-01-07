@@ -1,0 +1,260 @@
+body{
+  font-size: 15px;
+  color: black;
+  background-image: url("bg.jpeg");
+  background-size: cover;
+}
+.container{
+  position: absolute;
+  width: 100%;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.product{
+  max-width: 96%;
+  display: flex;
+  margin-left: 2%;
+}
+.product .pic{
+  width: 50%;
+  padding-top: 5px;
+  transform: scale(1.08);
+  background: black;
+}
+.product .pic img{
+  width: 100%;
+  height: 380px;
+}
+.product .pic .btn{
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+}
+.product .pic .btn button{
+  border-radius: 50%;
+  color: darkgoldenrod;
+  background: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 15px;
+}
+.product .pic .btn .active{
+  background: darkgoldenrod;
+  color: white;
+}
+.product .details{
+  width: 50%;
+  height: 380px;
+  background: white;
+  padding-left: 13px;
+  text-align: left;
+}
+.product .details h1{
+  font-size: 35px;
+  color: darkgoldenrod;
+}
+.product .details h3{
+  font-size: 20px;
+  color: green;
+  margin-top: -20px;
+}
+.product .details .p{
+  font-size: 12px;
+  border: 1px dashed red;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: -10px;
+}
+.size{
+  display: flex;
+}
+.product .details form .size p{
+  font-size: 15px;
+  width: 60px;
+  margin-top: -1px;
+}
+.size input{
+  display: none;
+}
+.size span{
+  font-size: 13px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.size input:checked + span{
+  color: darkgoldenrod;
+  font-weight: 500;
+  font-size: 15px;
+}
+.color{
+  display: flex;
+}
+.color p{
+  font-size: 15px;
+  width: 60px;
+  margin-top: 1px;
+}
+.color span{
+  padding-left: 6px;
+  padding-right: 6px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-right: 13px;
+  font-size: 10px;
+}
+.c1{
+  background: red;
+}
+.c2{
+  background: green;
+}
+.c3{
+  background: blue;
+}
+.color input{
+  display: none;
+}
+.color input:checked + span{
+  transform: scale(0.92);
+  border: 3px dashed black;
+}
+.qty{
+  display: flex;
+}
+.product .qty p{
+  font-size: 15px;
+  width: 60px;
+  margin-top: -1px;
+}
+.qty input{
+  width: 35px;
+  height: 20px;
+  border: none;
+  outline: none;
+  color: black;
+  background: lightgrey;
+  border-radius: 12px;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.qty button{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: white;
+  background: black;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buy{
+  margin-left: 15%;
+  width: 150px;
+  background: darkgoldenrod;
+  color: black;
+  font-weight: 700;
+  outline: 0;
+  border: 0;
+  padding: 5px;
+  border-radius: 1.5em;
+  font-size: 20px;
+  cursor: pointer;
+}
+.ads-head{
+  position: fixed;
+  top:10px;
+  display: flex;
+}
+.ads-head h1{
+  font-size: 60px;
+  margin-top: -10px;
+  margin-left: 10px;
+  color: white;
+}
+.ads-head h2{
+  font-size: 35px;
+  color: gold;
+}
+.ads-foot{
+  position: fixed;
+  bottom: 10px;
+}
+.ads-foot h3{
+  font-size: 35px;
+  color: white;
+  margin-bottom: -25px;
+}
+.ads-foot h3 span{
+  color: darkgoldenrod;
+}
+.ads-foot .time{
+  display: flex;
+  text-align: center;
+  color: white;
+}
+.ads-foot .time .space{
+  margin-left: 10px;
+}
+.ads-foot .time h2{
+  color: darkgoldenrod;
+  font-size: 30px;
+}
+.book{
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  text-align: center;
+}
+.book button{
+  font-size: 20px;
+  padding: 5px;
+  outline: 0;
+  border: 0;
+  width: 150px;
+  background: darkgoldenrod;
+  color: black;
+  font-weight: 900;
+  border-radius: 1.5em;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+  .product{
+    width: 50%;
+    position: absolute;
+    left:1%;
+  }
+  .ads-head{
+    right: 1%;
+    display: block;
+  }
+  .ads-foot{
+    right: 1%;
+  }
+}
+@media screen and (min-width: 1024px){
+  .product{
+    width: 50%;
+    position: absolute;
+    left:1%;
+  }
+  .ads-head{
+    right: 1%;
+    display: block;
+  }
+  .ads-foot{
+    right: 1%;
+  }
+}
